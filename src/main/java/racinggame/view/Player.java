@@ -5,6 +5,7 @@ import java.util.List;
 
 import nextstep.utils.Console;
 import racinggame.wrapper.CarName;
+import racinggame.wrapper.Round;
 
 public class Player {
 	private static final String ERROR_PREFIX = "[ERROR] ";
@@ -24,7 +25,7 @@ public class Player {
 		}
 	}
 
-	public static int writeDownRoundCount() {
+	public static Round writeDownRoundCount() {
 		System.out.println(MESSAGE_WRITE_DOWN_ROUND_COUNT);
 		try {
 			return validateRoundCount(Console.readLine());
@@ -43,9 +44,9 @@ public class Player {
 		return carNameList;
 	}
 
-	private static int validateRoundCount(String roundCount) {
+	private static Round validateRoundCount(String roundCount) {
 		try {
-			return Integer.parseInt(roundCount);
+			return new Round(Integer.parseInt(roundCount));
 		} catch (NumberFormatException e) {
 			throw new IllegalArgumentException(MESSAGE_ROUND_COUNT_ONLY_POSITIVE);
 		}

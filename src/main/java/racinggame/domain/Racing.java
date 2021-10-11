@@ -4,14 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import racinggame.wrapper.CarName;
+import racinggame.wrapper.Round;
 
 public class Racing {
 	private List<RacingCar> racingCars;
-	private int roundCount;
+	private Round totalRound;
 
-	public Racing(List<CarName> carNames, int roundCount) {
+	public Racing(List<CarName> carNames, Round totalRound) {
 		this.racingCars = joinCars(carNames);
-		this.roundCount = roundCount;
+		this.totalRound = totalRound;
 	}
 
 	private List<RacingCar> joinCars(List<CarName> carNames) {
@@ -26,8 +27,8 @@ public class Racing {
 		return this.racingCars;
 	}
 
-	public int getRoundCount() {
-		return this.roundCount;
+	public int getTotalRound() {
+		return this.totalRound.get();
 	}
 
 	public void nextRound() {

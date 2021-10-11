@@ -6,6 +6,7 @@ import racinggame.domain.Racing;
 import racinggame.view.Computer;
 import racinggame.view.Player;
 import racinggame.wrapper.CarName;
+import racinggame.wrapper.Round;
 
 public class RacingCarGame {
 	public RacingCarGame() {
@@ -14,18 +15,18 @@ public class RacingCarGame {
 
 	public void start() {
 		List<CarName> carNames = Player.writeDownCarNames();
-		int roundCount = Player.writeDownRoundCount();
-		prepare(carNames, roundCount);
+		Round totalRound = Player.writeDownRoundCount();
+		prepare(carNames, totalRound);
 	}
 
-	public void prepare(List<CarName> carNames, int roundCount) {
-		Racing racing = new Racing(carNames, roundCount);
+	public void prepare(List<CarName> carNames, Round totalRound) {
+		Racing racing = new Racing(carNames, totalRound);
 		Computer.printBeforePlay();
 		play(racing);
 	}
 
 	public void play(Racing racing) {
-		for (int round = 0; round < racing.getRoundCount(); round++) {
+		for (int round = 0; round < racing.getTotalRound(); round++) {
 			racing.nextRound();
 			Computer.printRoundResult(racing.getRacingCars());
 		}
