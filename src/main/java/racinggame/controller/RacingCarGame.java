@@ -27,6 +27,7 @@ public class RacingCarGame {
 	public void play(Racing racing) {
 		for (int round = 0; round < racing.getRoundCount(); round++) {
 			racing.nextRound();
+			Computer.printRoundResult(racing.getRacingCars());
 		}
 		finish();
 	}
