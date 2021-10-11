@@ -30,7 +30,6 @@ public class Racing {
 
 	public void nextRound() {
 		racingCars.move();
-		this.maxScore.update(getCurrentMaxScore());
 	}
 
 	public List<RacingCar> getWinners() {
@@ -38,6 +37,7 @@ public class Racing {
 	}
 
 	public void finish() {
+		this.maxScore.update(getCurrentMaxScore());
 		this.winners = new Winners(getRacingCars(), this.maxScore.get());
 	}
 
