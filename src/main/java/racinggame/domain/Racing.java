@@ -16,10 +16,6 @@ public class Racing {
 
 	private List<RacingCar> joinCars(List<CarName> carNames) {
 		List<RacingCar> racingCars = new ArrayList<>();
-		// for(int i = 0; i < carNames.size(); i++) {
-		// 	racingCars.add(new RacingCar(carNames))
-		// };
-
 		for (CarName name : carNames) {
 			racingCars.add(new RacingCar(name));
 		}
@@ -32,5 +28,9 @@ public class Racing {
 
 	public int getRoundCount() {
 		return this.roundCount;
+	}
+
+	public void nextRound() {
+		racingCars.forEach(car -> car.move());
 	}
 }
