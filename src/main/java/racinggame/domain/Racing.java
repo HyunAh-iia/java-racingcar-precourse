@@ -44,7 +44,7 @@ public class Racing {
 	private int getCurrentMaxScore() {
 		int max = 0;
 		for (RacingCar car : this.racingCars.get()) {
-			max = car.getCurrentScore() > max ? car.getCurrentScore() : max;
+			max = Math.max(car.getCurrentScore(), max);
 		}
 		return max;
 	}
