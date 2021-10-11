@@ -20,6 +20,7 @@ public class Score {
 	}
 
 	public void addScore(int score) {
+		validate(score);
 		this.score += score;
 	}
 
