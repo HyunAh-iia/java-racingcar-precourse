@@ -10,7 +10,7 @@ public class CarName {
 		if (carName == null || carName.isEmpty()) {
 			throw new IllegalArgumentException(MESSAGE_TOO_SHORT);
 		}
-		if (carName.length() <= MAX_CAR_NAME) {
+		if (carName.length() > MAX_CAR_NAME) {
 			throw new IllegalArgumentException(MESSAGE_TOO_LONG);
 		}
 		this.carName = carName;
