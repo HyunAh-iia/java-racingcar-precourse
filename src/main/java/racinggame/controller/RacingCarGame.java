@@ -19,22 +19,22 @@ public class RacingCarGame {
 		prepare(carNames, totalRound);
 	}
 
-	public void prepare(List<CarName> carNames, Round totalRound) {
+	private void prepare(List<CarName> carNames, Round totalRound) {
 		Racing racing = new Racing(carNames, totalRound);
 		Computer.printBeforePlay();
 		play(racing);
 	}
 
-	public void play(Racing racing) {
+	private void play(Racing racing) {
 		for (int round = 0; round < racing.getTotalRound(); round++) {
 			racing.nextRound();
 			Computer.printRoundResult(racing.getRacingCars());
 		}
-		finish();
+		finish(racing);
 	}
 
-	public void finish() {
-		// TODO 우승자 찾기
-		// TODO 출력
+	private void finish(Racing racing) {
+		racing.finish();
+		Computer.printWinners(racing.getWinners());
 	}
 }
