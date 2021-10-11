@@ -1,4 +1,4 @@
-package racinggame.wrapper;
+package racinggame.domain.wrapper;
 
 import java.util.ArrayList;
 import java.util.List;

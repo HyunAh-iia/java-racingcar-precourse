@@ -11,7 +11,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import nextstep.test.NSTest;
 import racinggame.Application;
-import racinggame.wrapper.CarName;
+import racinggame.domain.wrapper.CarName;
 
 public class RacingCarTest extends NSTest {
 

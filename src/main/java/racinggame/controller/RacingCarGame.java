@@ -3,10 +3,10 @@ package racinggame.controller;
 import java.util.List;
 
 import racinggame.domain.Racing;
+import racinggame.domain.wrapper.CarName;
+import racinggame.domain.wrapper.Round;
 import racinggame.view.Computer;
 import racinggame.view.Player;
-import racinggame.wrapper.CarName;
-import racinggame.wrapper.Round;
 
 public class RacingCarGame {
 	public RacingCarGame() {

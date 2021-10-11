@@ -1,4 +1,4 @@
-package racinggame.wrapper;
+package racinggame.domain.wrapper;
 
 public class CarName {
 	private static final String MESSAGE_TOO_SHORT = "자동차의 이름은 한 글자 이상 입력하셔야합니다.";

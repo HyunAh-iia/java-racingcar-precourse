@@ -2,11 +2,11 @@ package racinggame.domain;
 
 import java.util.List;
 
-import racinggame.wrapper.CarName;
-import racinggame.wrapper.ParticipatingCars;
-import racinggame.wrapper.Round;
-import racinggame.wrapper.Score;
-import racinggame.wrapper.Winners;
+import racinggame.domain.wrapper.CarName;
+import racinggame.domain.wrapper.ParticipatingCars;
+import racinggame.domain.wrapper.Round;
+import racinggame.domain.wrapper.Score;
+import racinggame.domain.wrapper.Winners;
 
 public class Racing {
 	private ParticipatingCars racingCars;

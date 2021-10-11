@@ -1,4 +1,4 @@
-package racinggame.wrapper;
+package racinggame.domain.wrapper;
 
 public class Score {
 	private static final int DEFAULT_SCORE = 0;

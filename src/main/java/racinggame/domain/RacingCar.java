@@ -1,8 +1,8 @@
 package racinggame.domain;
 
-import racinggame.wrapper.CarName;
-import racinggame.wrapper.MovingScore;
-import racinggame.wrapper.Score;
+import racinggame.domain.wrapper.CarName;
+import racinggame.domain.wrapper.MovingScore;
+import racinggame.domain.wrapper.Score;
 
 public class RacingCar {
 	private CarName carName;

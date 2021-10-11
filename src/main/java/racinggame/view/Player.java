@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import nextstep.utils.Console;
-import racinggame.wrapper.CarName;
-import racinggame.wrapper.Round;
+import racinggame.domain.wrapper.CarName;
+import racinggame.domain.wrapper.Round;
 
 public class Player {
 	private static final String ERROR_PREFIX = "[ERROR] ";

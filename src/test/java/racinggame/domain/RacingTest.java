@@ -9,8 +9,8 @@ import java.util.List;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import racinggame.wrapper.CarName;
-import racinggame.wrapper.Round;
+import racinggame.domain.wrapper.CarName;
+import racinggame.domain.wrapper.Round;
 
 public class RacingTest {
 	@DisplayName("레이싱 게임에 참여할 자동차들 존재 검증")
