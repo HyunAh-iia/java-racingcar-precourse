@@ -17,12 +17,8 @@ public class Winners {
 	}
 
 	private void listUp(RacingCar car, int maxScore) {
-		if (car.getCurrentScore() < maxScore) {
-			return;
+		if (car.getCurrentScore() >= maxScore) {
+			winners.add(car);
 		}
-		if (car.getCurrentScore() > maxScore) {
-			winners.clear();
-		}
-		winners.add(car);
 	}
 }
